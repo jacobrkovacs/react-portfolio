@@ -1,4 +1,6 @@
-
+const header = {
+  fontFamily: 'Klee One'
+}
 const cardStyle = {
   width: '300px'
 }
@@ -18,7 +20,7 @@ import githubImg from '../assets/images/GitHub-Mark.png'
 export default function Project({ works }) {
     return (
       <div>
-        <h1>Projects Page</h1>
+        <h1 style={header}>Projects Page</h1>
         <hr />
         <div className="d-flex flex-wrap justify-content-center">
           {works.map((work => (

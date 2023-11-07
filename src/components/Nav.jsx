@@ -9,7 +9,7 @@ function Nav() {
         <>
             <div className='mb-5 navbar d-flex align-items-center'>
                 <Link className={currentTab === '/' ? 'nav-item nav-link glow' : 'nav-item nav-link'}>
-                    My website
+                    Jacob Kovacs
                 </Link>
             <div className='d-flex justify-content-end'>
             <ul className='custom-nav'>

@@ -17,7 +17,8 @@ export default function Home() {
             <p style={paragraph}>
                 Welcome to my React Portfolio! <br />
                 Utilize the tabs at the top of the screen to navigate to the different sections of this app. <br />
-                This is a single page web application run on React.
+                This is a single page web application run on React. <br />
+                Here you will find projects I've worked on, my resume and a way to contact me if you feel so inclined to do so.
             </p>
         </div>
     )
