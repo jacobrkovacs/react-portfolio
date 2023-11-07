@@ -1,7 +1,6 @@
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 import { useState } from 'react';
-import 'dotenv'
 
 const ContactForm = () => {
     const {
@@ -37,10 +36,10 @@ const toggleAlert = (message, type) => {
         message
       };
       await emailjs.send(
-        process.env.REACT_APP_PORTFOLIO_SERVICE_ID,
-        process.env.REACT_APP_PORTFOLIO_TEMPLATE_ID,
+        "service_q6ly909",
+        "template_hkjb4s9",
         templateParams,
-        process.env.REACT_APP_PORTFOLIO_PUBLIC_KEY
+        "BxNwf79bpel-GSuJi"
       );
       reset();
       toggleAlert('Form submission was successful!', 'success');
@@ -59,12 +58,12 @@ const toggleAlert = (message, type) => {
   return (
     <div className='ContactForm'>
       <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
+        <div className='row justify-content-center'>
+          <div className='col-6 text-center'>
             <div className='contactForm'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
-                <div className='row formRow'>
+                <div className='row formRow my-3'>
                   <div className='col-6'>
                     <input
                       type='text'
@@ -98,7 +97,7 @@ const toggleAlert = (message, type) => {
                   </div>
                 </div>
                 {/* Row 2 of form */}
-                <div className='row formRow'>
+                <div className='row formRow my-3'>
                   <div className='col'>
                     <input
                       type='text'
@@ -119,7 +118,7 @@ const toggleAlert = (message, type) => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className='row formRow'>
+                <div className='row formRow my-3'>
                   <div className='col'>
                     <textarea
                       rows={3}
@@ -133,7 +132,7 @@ const toggleAlert = (message, type) => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn' type='submit'>
+                <button className='btn btn-dark' type='submit'>
                   Submit
                 </button>
               </form>

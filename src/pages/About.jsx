@@ -25,8 +25,7 @@ export default function About() {
         <div className='d-flex'>
           <img style={image} src={`${myface}`} alt="Image of Jacob Kovacs" />
           <p style={paragraph}>
-            My name is Jacob. I recently completed a full-stack web development bootcamp through uc davis/edx. <br />
-            
+            My name is Jacob. I am in the process of completing a full-stack web development bootcamp through UC Davis.
           </p>
         </div>
       </div>
