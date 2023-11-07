@@ -1,0 +1,39 @@
+.glow {
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff9e58, 0 0 30px #ff9e58, 0 0 40px #ff9e58, 0 0 50px #ff9e58, 0 0 55px #ff9e58;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fb7b1f, 0 0 40px #fb7b1f, 0 0 50px #fb7b1f, 0 0 60px #fb7b1f, 0 0 75px #fb7b1f;
+    }
+  }
+
+  .container{
+    margin-left: 3rem;
+    height: 7rem;
+  }
+
+  .custom-nav {
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+
+  }
+  .nav-item {
+    font-family: Klee One;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    color: #000000;
+    text-decoration: none;
+  }
