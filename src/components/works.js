@@ -1,9 +1,17 @@
+const kts = './images/kts-landing-page.png'
 const vidya = './images/Vidya.png'
 const fitness = './images/fitness_app.png'
 const employee = './images/Employee-Management.png'
 const inventory = './images/Inventory-MAnagement.png'
 
 const works = [
+    {
+        id: 0,
+        title: "Kraken The Stack",
+        description: "A React website converted from a static website.",
+        image: kts,
+        url: 'https://krakenthestack.com',
+    },
     {
         id: 1,
         title: "Group Project 1: Vidya",

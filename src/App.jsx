@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Nav from './components/Nav'
-import bgImg from './assets/images/background.png'
+import bgImg from '/src/assets/images/background.png'
 
 
 const background = {

@@ -30,7 +30,7 @@ export default function Project({ works }) {
                 <h5 className="card-title">{work.title}</h5>
                 <p className="card-text">{work.description}</p>
               </div>
-                <a target="_blank" href={work.repoUrl} ><img src={githubImg} alt="" style={githubImgStyle}/></a>
+                {work.repoUrl && <a target="_blank" href={work.repoUrl} ><img src={githubImg} alt="" style={githubImgStyle}/></a>}
             </div>
           )))}
         </div>
