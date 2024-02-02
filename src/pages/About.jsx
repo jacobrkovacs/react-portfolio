@@ -25,7 +25,7 @@ export default function About() {
         <div className='d-flex'>
           <img style={image} src={`${myface}`} alt="Image of Jacob Kovacs" />
           <p style={paragraph}>
-            My name is Jacob. I am in the process of completing a full-stack web development bootcamp through UC Davis.
+            My name is Jacob. I am a certified full-stack web developer. I enjoy playing and designing board games. A page of my current board game designs will be up on this site soon!
           </p>
         </div>
       </div>

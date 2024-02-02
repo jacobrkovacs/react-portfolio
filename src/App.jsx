@@ -4,16 +4,18 @@ import bgImg from '/src/assets/images/background.png'
 
 
 const background = {
-  backgroundImage: `url(${bgImg}) center fixed`,
+  backgroundImage: `url(${bgImg})`,
+  backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  height: '100vh'
+  backgroundPosition: 'center',
+  minHeight: '100vh'
 }
 
 function App() {
 
   return (
     <>
-      <div style={background}>
+      <div className='background' style={background}>
         <Nav />
         <main className='mx-5'>
           <Outlet />
